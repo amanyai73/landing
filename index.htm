@@ -28,6 +28,8 @@
              display: block; /* Ensures the image behaves as a block element */
              height: auto; /* Maintain aspect ratio */
              filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5)); /* Re-added drop shadow for definition */
+             margin-left: auto; /* Center the logo if its actual width is less than max-width */
+             margin-right: auto; /* Center the logo */
          }
      </style>
  </head>
@@ -39,7 +41,7 @@
              <div id="content-overlay" class="absolute inset-0 bg-black opacity-40 z-0"></div>
 
              <div class="relative z-10 flex flex-col items-center" id="landing-content">
-                 <img src="lillie-beas-logo.png" alt="Lillie Bea's Logo" class="logo-image w-full max-w-sm sm:max-w-md md:max-w-lg mb-6">
+                 <img src="lillie-beas-logo.png" alt="Lillie Bea's Logo" class="logo-image w-full max-w-2xl mb-6">
                  <p class="text-xl sm:text-2xl md:text-3xl mb-10 text-[#FAF8F6] max-w-2xl text-shadow-custom font-lora italic">
                      "A love letter to community—rooted in intention, elevated in experience."
                  </p>
