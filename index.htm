@@ -31,6 +31,26 @@
              margin-left: auto; /* Center the logo if its actual width is less than max-width */
              margin-right: auto; /* Center the logo */
          }
+         /* Responsive container for the DocSend iframe */
+         .docsend-container {
+             position: relative;
+             overflow: hidden;
+             width: 100%;
+             padding-top: 75%; /* 4:3 Aspect Ratio (480 / 640 = 0.75) */
+             border-radius: 0.5rem;
+             box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+         }
+         /* Iframe styles */
+         .docsend-iframe {
+             position: absolute;
+             top: 0;
+             left: 0;
+             bottom: 0;
+             right: 0;
+             width: 100%;
+             height: 100%;
+             border: 0;
+         }
      </style>
  </head>
  <body class="bg-[#FAF8F6]">
@@ -54,7 +74,7 @@
              </div>
 
              <div class="absolute bottom-6 left-6 md:bottom-8 md:left-8 z-10 text-xs sm:text-sm text-[#FAF8F6] text-shadow-custom text-left" id="subline-content">
-                 Café. Cocktail bar. Event space. All in one.<br>Opening soon in NYC.
+                 One Space.<br>Three Experiences.<br>Opening soon in NYC.
              </div>
 
              <div class="absolute top-6 right-6 md:top-8 md:right-8 z-10" id="investor-link-content">
@@ -78,8 +98,9 @@
                  <h2 class="text-4xl md:text-5xl font-bold text-[#D4AF37] mb-6 font-lora">
                      Investor Access
                  </h2>
-                 <div class="space-y-4 text-lg text-gray-700">
-                    </div>
+                 <div class="docsend-container">
+                     <iframe class="docsend-iframe" src="https://docsend.com/view/84hiceyv7hymixi9" allow="fullscreen"></iframe>
+                 </div>
              </div>
          </section>
      </div>
